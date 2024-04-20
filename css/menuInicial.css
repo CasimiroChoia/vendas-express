@@ -1,0 +1,147 @@
+@font-face {
+    font-family: "bau";
+    src:url("fonts/bau.TTF"),
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-transform: capitalize;
+    text-align: center;
+    cursor: default;
+    font-family: "bau";
+    box-sizing: border-box;
+}
+
+body {
+    background: rgba(112, 171, 70, .6);
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content:space-between;
+    padding:  0 50px;
+    
+    align-items:center;
+    border-bottom:3pt dotted rgba(0, 0, 0, 0.5);
+    font-weight:bolder;
+    margin-bottom: .5cm;
+
+    & * {
+        align-items:center;
+
+    }
+    a:nth-child(1) {
+        background: #000;
+        color: #fff;
+    }
+
+    .nav-bar a {
+        display: inline;
+        padding: 5px 8px;
+        margin: 0 5px;
+        line-height: 4;
+        border: 1pt solid #000;
+        border-radius: 5px;
+    }
+    .nav-bar a:hover {
+        background: black;
+        color: white;
+        letter-spacing:2px;
+        transition:.5s;
+    }
+    p {
+        align-self:center;
+    }
+
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: calc(100% - 3cm);
+    color:#fff;
+    padding:3px;
+    
+    & section:nth-child(1) {
+        margin-top: -20px;
+    }
+}
+
+.container > * {
+    margin: 5px;
+}
+
+button {
+    background: rgb(112, 171, 70);
+    border-radius: 10px;
+    border: none;
+    color: white;
+    text-shadow:-3px 3px 1px #000;
+    font-size: 30pt;
+    /* font-family: impact, sans-serif; */
+    cursor: pointer;
+}
+
+button:focus {
+    border: 5px solid #000;
+}
+
+button:hover {
+    box-shadow: 0 0 5px 5px lightgreen;
+    transition: all 1s;
+}
+
+.btnAdidicionar,
+.btnGerarRelatorio,
+.btnVoltar {
+    display: block;
+    height: 3cm;
+    width: 90%;
+    margin: 30px auto;
+    letter-spacing: 3px;
+    
+    &:hover {
+        background: lightgreen;
+    }
+}
+
+.btnActualizarStock,
+.btnVerificarStock {
+    margin: 0 5px;
+    width: calc(100% - 10px);
+    height: 3cm;
+    padding: 0 35px;
+    box-sizing: border-box;
+    
+    &:hover {
+        background: lightgreen;
+    }
+}
+.btnVoltar:hover {
+    background: red;
+    box-shadow: 0 0 5px 5px lightcoral;
+}
+
+.btnInline {
+    display: flex;
+    flex-flow: row;
+    margin: auto;
+    width: 90%;
+    justify-content:space-between;
+}
+
+.btnInline a {
+    width: fit-content;
+}
+
+#nome {
+    letter-spacing: 1px;
+}

@@ -1,0 +1,70 @@
+/*header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:space-around;
+    align-items:center;
+}*/
+
+@keyframes from-down {
+    from {
+        opacity:0;
+        transform: translateY(30px);
+    }
+}
+
+* {
+    text-align: center;
+    text-transform: capitalize;
+    z-index: 0;
+    border: 3pxsolid #000;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    background: rgb(191, 191, 191);
+    overflow: hidden;
+}
+
+.container {
+    margin-top: 2cm;
+    background: url('../img/trevo.png') no-repeat;
+    height: 100%;
+}
+
+button {
+    margin: 5px;
+    padding: 2px 5px;
+    height: 1.41cm;
+    width: 6cm;
+    border: none;
+    background: rgb(112,171,70);
+    color:white;
+    font-size: 28pt;
+    border-radius: 10px;
+    font-family: monospace;
+    cursor: pointer;
+}
+
+.btnIniciar {animation: from-down 3s cubic-bezier(1, -2.42, 0, 2.06) 1;}
+.btnIniciar {animation: from-down 3s cubic-bezier(1, -2.42, 0, 4.2) 1;}
+.btnSair {animation: from-down 1s ease-in-out 1;}
+
+button:hover,
+button:focus {
+    transition: .5s;
+    box-shadow: 0 0 15px black;
+}
+
+.imgContainer {
+    position: relative;
+    width: fit-content;
+    margin: 2cm auto;
+}
+
+.trevo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -10;
+}

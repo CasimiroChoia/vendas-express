@@ -1,0 +1,35 @@
+
+table {
+    width: 100%;
+}
+
+table * {
+    color: #fff;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 20px;
+}
+/* .tabela h1 {
+    font-size: 20pt;
+    color: #fff;
+} */
+.tabela {
+    background: rgb(55, 86, 35);
+    border-radius: 10px 10px 0 0;
+    border:5px solid #000;
+
+}
+thead {
+    background: rgb(55, 86, 35);
+}
+
+tbody > tr > td:nth-child(3):after {
+    content: "kz";
+}
+
+tbody > tr {
+    padding: 10px;
+}
+
+.gradiente tbody > *:nth-child(even) {background: rgb(112, 183,71);}
+.gradiente tbody > *:nth-child(odd) {background: rgb(84, 130,53);}
