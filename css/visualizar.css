@@ -1,0 +1,138 @@
+@font-face {
+    font-family: 'bau';
+    src: url('fonts/bau.TTF') format("TrueType");
+}
+
+:root {
+    --radius-1: 10px;
+    --verde-forte: rgb(56, 86, 34);
+    --font-padrao: monospace;
+}
+
+::-webkit-scrollbar {
+    background-color: rgb(148, 196, 117);
+    border-radius: var(--radius-1);
+    transition: all 1s;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(56, 86, 34, 0.5);
+    border-radius: var(--radius-1);
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(56, 86, 34, 1);
+    transition: all 1s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    cursor: default;
+    text-align: center;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-family: monospace, "bau", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    height: fit-content;
+    /* width: fit-content; */
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    min-height: 100vh;
+    align-items: center;
+    overflow: hidden;
+    justify-content: space-around;
+
+    &>* {
+        width: 50%;
+        height: 100%;
+        padding: 10px;
+        min-height: 500px;
+    }
+}
+
+table {
+    width: 100%;
+    margin: auto;
+    height: inherit;
+    font-size: 24pt;
+    max-height: 80vh;
+    overflow: scroll;
+    min-height: 800px;
+    letter-spacing: 5px;
+    border-collapse: collapse;
+    border: 2px solid #000;
+    border-radius: 10px;
+
+    & thead {
+
+        & tr:nth-child(even) {
+            background-color: darkgreen;
+        }
+    }
+
+    & tbody tr{
+        /* border-right: 1px solid #fff; */
+        border-bottom: 1px solid #000;
+    }
+
+    & th[colspan="2"] {
+        background-color: rgb(47, 125, 0);
+        background-color: darkgreen;
+    }
+
+    & tr:nth-child(even) {
+        background-color: rgb(148, 196, 117);
+    }
+
+    & tr:nth-child(odd) {
+        background-color: rgb(126, 183, 92);
+    }
+
+    & * {
+        min-height: 30px;
+    }
+
+}
+
+/* 
+.containerTabela {
+    height: 80vh;
+} */
+
+div.containerTabela {
+    height: 90vh;
+    overflow: auto;
+    align-self: center;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    height: 2cm;
+    font-size: 28pt;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    margin: 20px auto;
+
+    border-radius: var(--radius-1);
+    font-family: var(--font-padrao);
+    background-color: var(--verde-forte);
+}
+
+.btn-container {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+    justify-content: center;
+}

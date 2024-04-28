@@ -1,35 +1,53 @@
-
 table {
     width: 100%;
+    padding: 10px;
+    border-collapse: collapse;
 }
 
 table * {
     color: #fff;
-    text-align: center;
-    letter-spacing: 3px;
     font-size: 20px;
+    text-align: center;
 }
-/* .tabela h1 {
-    font-size: 20pt;
-    color: #fff;
-} */
-.tabela {
-    background: rgb(55, 86, 35);
-    border-radius: 10px 10px 0 0;
-    border:5px solid #000;
 
+.tabela {
+    max-height: 90vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border: 2px solid #000;
+    border-radius: 10px 10px 0 0;
+    background: rgb(55, 86, 35);
 }
+
 thead {
     background: rgb(55, 86, 35);
 }
 
-tbody > tr > td:nth-child(3):after {
+tbody>tr>td:nth-child(3):after {
     content: "kz";
 }
 
-tbody > tr {
+tbody>tr>td {
+    border-right: 1px solid #fff;
+}
+
+tbody>tr {
     padding: 10px;
 }
 
-.gradiente tbody > *:nth-child(even) {background: rgb(112, 183,71);}
-.gradiente tbody > *:nth-child(odd) {background: rgb(84, 130,53);}
+td {
+    padding: 4px;
+    white-space: nowrap;
+}
+
+.gradiente tbody>*:nth-child(even) {
+    background: rgb(112, 183, 71);
+}
+
+.gradiente tbody>*:nth-child(odd) {
+    background: rgb(84, 130, 53);
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}

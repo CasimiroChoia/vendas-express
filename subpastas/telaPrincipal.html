@@ -1,50 +1,41 @@
 <!DOCTYPE html>
-<html lang="pt">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>MENU PRINCIPAL</title>
-        <link rel="stylesheet" href="../css/tabela.css">
-        <link rel="stylesheet" href="../css/menuInicial.css">
-        <link rel="shortcut icon" href="../img/logo.png" >
-        <script defer src="js/telaPrincipal.js"></script>
-    </head>
-    <body>
-        <header>
-            <img src="../img/logo.png" width="100" height="64" alt="icon"/>
-            <h1 id="nome" ></h1>
-            <nav class="nav-bar">
-                <a>menu</a>
-                <a>informação</a>
-                <a>sobre</a>
-                <a href="../index.html">voltar</a>
-            </nav>
-            <!-- <p>
-                <script defer>
-                    let data = new Date();
-                    document.write(`${data.getFullYear()}-${appendZero(data.getMonth())}-${appendZero(data.getDate())}`);
-                    function appendZero(arg) {
-                        if (arg < 10) {
-                            return "0" + arg;
-                        } else {
-                            return arg;
-                        }
-                    }
-                </script>
-            </p> -->
-        </header>
-        <div class="container">
+<html lang="pt-PT">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>MENU PRINCIPAL</title>
+    <link rel="stylesheet" href="../css/tabela.css">
+    <link rel="stylesheet" href="../css/menuInicial.css">
+    <link rel="shortcut icon" href="../img/logo.png">
+    <script defer src="../regras.js"></script>
+    <script defer src="js/telaPrincipal.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="../img/logo.png" onclick="window.location.reload()" style="cursor: pointer;" width="100" height="64" alt="icon" draggable="false" />
+        <h1 id="nome"></h1>
+        <nav class="nav-bar">
+            <a>menu</a>
+            <a>informação</a>
+            <a>sobre</a>
+            <a href="../index.html">voltar</a>
+        </nav>
+
+    </header>
+    <div class="container">
         <section class="btnContainer">
             <a href="adicionar/adicionar.html"><button type="button" class="btnAdidicionar">adicionar</button></a>
 
             <div class="btnInline">
-                <a href=""><button type="button" class="btnActualizarStock">atualizar stock</button></a>
-                <a href=""><button type="button" class="btnVerificarStock">ver o stock</button></a>
+                <a href="stock/actualizar.html"><button type="button" class="btnActualizarStock">atualizar stock</button></a>
+                <a href="stock/visualisar.html"><button type="button" class="btnVerificarStock">ver o stock</button></a>
             </div>
-            <a href=""><button type="button" class="btnGerarRelatorio">gerar relatório</button></a>
+            <a href="relatorio/gerador.html"><button type="button" class="btnGerarRelatorio">gerar relatório</button></a>
             <a href="../index.html" target="_self"><button type="button" class="btnVoltar">voltar</button></a>
         </section>
         <section class="tabela">
-                <h1>relatório de vendas</h1>
+            <h1>relatório de vendas</h1>
             <table class="gradiente">
                 <thead>
                     <tr>
@@ -105,11 +96,252 @@
                         <td></td>
                         <td>2024-04-02</td>
                     </tr>
-                    
+                    <tr>
+                        <td>trabalhador</td>
+                        <td>Computador HP</td>
+                        <td>200000</td>
+                        <td>6</td>
+                        <td></td>
+                        <td>2024-04-02</td>
+                    </tr>
+                    <tr>
+                        <td>trabalhador</td>
+                        <td>Computador HP</td>
+                        <td>200000</td>
+                        <td>6</td>
+                        <td></td>
+                        <td>2024-04-02</td>
+                    </tr>
+                    <tr>
+                        <td>trabalhador</td>
+                        <td>Computador HP</td>
+                        <td>200000</td>
+                        <td>6</td>
+                        <td></td>
+                        <td>2024-04-02</td>
+                    </tr>
+                    <tr>
+                        <td>trabalhador</td>
+                        <td>Computador HP</td>
+                        <td>200000</td>
+                        <td>6</td>
+                        <td></td>
+                        <td>2024-04-02</td>
+                    </tr>
+                    <tr>
+                        <td>trabalhador</td>
+                        <td>Computador HP</td>
+                        <td>200000</td>
+                        <td>6</td>
+                        <td></td>
+                        <td>2024-04-02</td>
+                    </tr>
+                    <tr>
+                        <td>trabalhador</td>
+                        <td>Computador HP</td>
+                        <td>200000</td>
+                        <td>6</td>
+                        <td></td>
+                        <td>2024-04-02</td>
+                    </tr>
+                    <tr>
+                        <td>trabalhador</td>
+                        <td>Computador HP</td>
+                        <td>200000</td>
+                        <td>6</td>
+                        <td></td>
+                        <td>2024-04-02</td>
+                    </tr>
+                    <tr>
+                        <td>trabalhador</td>
+                        <td>Computador HP</td>
+                        <td>200000</td>
+                        <td>6</td>
+                        <td></td>
+                        <td>2024-04-02</td>
+                    </tr>
+                    <tr>
+                        <td>trabalhador</td>
+                        <td>Computador HP</td>
+                        <td>200000</td>
+                        <td>6</td>
+                        <td></td>
+                        <td>2024-04-02</td>
+                    </tr>
+                    <tr>
+                        <td>trabalhador</td>
+                        <td>Computador HP</td>
+                        <td>200000</td>
+                        <td>6</td>
+                        <td></td>
+                        <td>2024-04-02</td>
+                    </tr>
+                    <tr>
+                        <td>trabalhador</td>
+                        <td>Computador HP</td>
+                        <td>200000</td>
+                        <td>6</td>
+                        <td></td>
+                        <td>2024-04-02</td>
+                    </tr>
+                    <tr>
+                        <td>trabalhador</td>
+                        <td>Computador HP</td>
+                        <td>200000</td>
+                        <td>6</td>
+                        <td></td>
+                        <td>2024-04-02</td>
+                    </tr>
+                    <tr>
+                        <td>trabalhador</td>
+                        <td>Computador HP</td>
+                        <td>200000</td>
+                        <td>6</td>
+                        <td></td>
+                        <td>2024-04-02</td>
+                    </tr>
+                    <tr>
+                        <td>trabalhador</td>
+                        <td>Computador HP</td>
+                        <td>200000</td>
+                        <td>6</td>
+                        <td></td>
+                        <td>2024-04-02</td>
+                    </tr>
+                    <tr>
+                        <td>trabalhador</td>
+                        <td>Computador HP</td>
+                        <td>200000</td>
+                        <td>6</td>
+                        <td></td>
+                        <td>2024-04-02</td>
+                    </tr>
+                    <tr>
+                        <td>trabalhador</td>
+                        <td>Computador HP</td>
+                        <td>200000</td>
+                        <td>6</td>
+                        <td></td>
+                        <td>2024-04-02</td>
+                    </tr>
+                    <tr>
+                        <td>trabalhador</td>
+                        <td>Computador HP</td>
+                        <td>200000</td>
+                        <td>6</td>
+                        <td></td>
+                        <td>2024-04-02</td>
+                    </tr>
+                    <tr>
+                        <td>trabalhador</td>
+                        <td>Computador HP</td>
+                        <td>200000</td>
+                        <td>6</td>
+                        <td></td>
+                        <td>2024-04-02</td>
+                    </tr>
+                    <tr>
+                        <td>trabalhador</td>
+                        <td>Computador HP</td>
+                        <td>200000</td>
+                        <td>6</td>
+                        <td></td>
+                        <td>2024-04-02</td>
+                    </tr>
+                    <tr>
+                        <td>trabalhador</td>
+                        <td>Computador HP</td>
+                        <td>200000</td>
+                        <td>6</td>
+                        <td></td>
+                        <td>2024-04-02</td>
+                    </tr>
+                    <tr>
+                        <td>trabalhador</td>
+                        <td>Computador HP</td>
+                        <td>200000</td>
+                        <td>6</td>
+                        <td></td>
+                        <td>2024-04-02</td>
+                    </tr>
+                    <tr>
+                        <td>trabalhador</td>
+                        <td>Computador HP</td>
+                        <td>200000</td>
+                        <td>6</td>
+                        <td></td>
+                        <td>2024-04-02</td>
+                    </tr>
+                    <tr>
+                        <td>trabalhador</td>
+                        <td>Computador HP</td>
+                        <td>200000</td>
+                        <td>6</td>
+                        <td></td>
+                        <td>2024-04-02</td>
+                    </tr>
+                    <tr>
+                        <td>trabalhador</td>
+                        <td>Computador HP</td>
+                        <td>200000</td>
+                        <td>6</td>
+                        <td></td>
+                        <td>2024-04-02</td>
+                    </tr>
+                    <tr>
+                        <td>trabalhador</td>
+                        <td>Computador HP</td>
+                        <td>200000</td>
+                        <td>6</td>
+                        <td></td>
+                        <td>2024-04-02</td>
+                    </tr>
+                    <tr>
+                        <td>trabalhador</td>
+                        <td>Computador HP</td>
+                        <td>200000</td>
+                        <td>6</td>
+                        <td></td>
+                        <td>2024-04-02</td>
+                    </tr>
+                    <tr>
+                        <td>trabalhador</td>
+                        <td>Computador HP</td>
+                        <td>200000</td>
+                        <td>6</td>
+                        <td></td>
+                        <td>2024-04-02</td>
+                    </tr>
+                    <tr>
+                        <td>trabalhador</td>
+                        <td>Computador HP</td>
+                        <td>200000</td>
+                        <td>6</td>
+                        <td></td>
+                        <td>2024-04-02</td>
+                    </tr>
+                    <tr>
+                        <td>trabalhador</td>
+                        <td>Computador HP</td>
+                        <td>200000</td>
+                        <td>6</td>
+                        <td></td>
+                        <td>2024-04-02</td>
+                    </tr>
+                    <tr>
+                        <td>trabalhador</td>
+                        <td>Computador HP</td>
+                        <td>200000</td>
+                        <td>6</td>
+                        <td></td>
+                        <td>2024-04-02</td>
+                    </tr>
+
                 </tbody>
             </table>
 
         </section>
-        </div>
-    </body>
+    </div>
+</body>
+
 </html>

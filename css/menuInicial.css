@@ -9,7 +9,7 @@
     text-transform: capitalize;
     text-align: center;
     cursor: default;
-    font-family: "bau";
+    font-family: monospace;
     box-sizing: border-box;
 }
 
@@ -33,7 +33,7 @@ header {
 
     }
     a:nth-child(1) {
-        background: #000;
+        background: darkgreen;
         color: #fff;
     }
 
@@ -42,11 +42,15 @@ header {
         padding: 5px 8px;
         margin: 0 5px;
         line-height: 4;
-        border: 1pt solid #000;
-        border-radius: 5px;
+        /* border-radius: 5px; */
+        border: 1px solid #2a5333;
+    }
+    .nav-bar a:hover:not(:hover) {
+        opacity: .5;
+        transition: all 1s;
     }
     .nav-bar a:hover {
-        background: black;
+        /* background: black; */
         color: white;
         letter-spacing:2px;
         transition:.5s;
@@ -68,6 +72,7 @@ a {
     grid-template-columns: repeat(2, 1fr);
     height: calc(100% - 3cm);
     color:#fff;
+    /* overflow: hidden; */
     padding:3px;
     
     & section:nth-child(1) {
@@ -84,7 +89,7 @@ button {
     border-radius: 10px;
     border: none;
     color: white;
-    text-shadow:-3px 3px 1px #000;
+    text-shadow: 0px 0px 1px #000;
     font-size: 30pt;
     /* font-family: impact, sans-serif; */
     cursor: pointer;
@@ -99,6 +104,7 @@ button:hover {
     transition: all 1s;
 }
 
+
 .btnAdidicionar,
 .btnGerarRelatorio,
 .btnVoltar {
@@ -106,10 +112,10 @@ button:hover {
     height: 3cm;
     width: 90%;
     margin: 30px auto;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
     
     &:hover {
-        background: lightgreen;
+        background-color: lightgreen;
     }
 }
 
@@ -122,7 +128,7 @@ button:hover {
     box-sizing: border-box;
     
     &:hover {
-        background: lightgreen;
+        background-color: lightgreen;
     }
 }
 .btnVoltar:hover {
@@ -135,6 +141,7 @@ button:hover {
     flex-flow: row;
     margin: auto;
     width: 90%;
+    box-sizing: border-box;
     justify-content:space-between;
 }
 
@@ -144,4 +151,11 @@ button:hover {
 
 #nome {
     letter-spacing: 1px;
+    position: absolute;
+    right: 50%;
+    white-space: nowrap;
+}
+
+.tabela {
+    min-width: fit-content;
 }

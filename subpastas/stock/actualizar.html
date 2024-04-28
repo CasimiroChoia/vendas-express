@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACTUALIZAR STOCK</title>
+    <link rel="stylesheet" href="../../css/actualizar.css">
+    <link rel="shortcut icon" href="../../img/logo.png" type="image/x-icon">
+    <script src="../../regras.js"></script>
+</head>
+
+<body>
+    <form method="post" class="container">
+        <h1>preencha os campos</h1>
+        <div class="campo">
+            <span class="titulo produto">produto:</span>
+            <div class="entrada">
+                <select name="produto" id="produto" required> <!-- SELECT PRODUTO -->
+                    <option value="" selected>nada</option>
+                    <option value="feijão">feijão</option>
+                    <option value="açucar">açucar</option>
+                    <option value="gasosa">gasosa</option>
+                    <option value="bolacha">bolacha</option>
+                    <option value="chapada">chapada</option>
+                </select>
+            </div>
+        </div>
+        <div class="campo"> <!-- CAMPO -->
+            <span class="titulo novoStock">novo stock:</span>
+            <div class="entrada">
+                <input type="number" id="novoStock" min="0" required>
+            </div>
+        </div>
+        <a href="../telaPrincipal.html"><button type="button" class="btn voltar">voltar</button></a>
+        <button type="button" class="btn">executar</button>
+    </form>
+</body>
+
+</html>
